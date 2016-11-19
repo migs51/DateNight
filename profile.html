@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Date Night</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- jquery -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/eggplant/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+<div class="container">
+        <h2>Create Profile</h2>
+        <hr>
+        <h4>First Name</h4>
+        <input type="text" name="" id="firstname" class="form-control" required="">
+        <h4>Last Name</h4>
+        <input type="text" name="" id="lastname" class="form-control" required="">
+        <h4>Email</h4>
+        <input type="text" name="" id="email" class="form-control" required="">
+        <h4>Location</h4>
+        <input type="text" name="" id="location" class="form-control" required="">
+        <hr><br>
+        <h4>When are you planning your date night?</h4>
+        <p>Date Night:<input type="text" name="date" id="dateselector"></p>
+       <br>
+        <h4>Date Night Questions</h4>
+        <h3><strong>What kinds of activities do you like?</strong></h3>
+        <div class="input-group" role="group" aria-label="..." id="q1">
+            <p>
+                <input type="radio" name="q1" value="1"> Party!</p>
+            <p>
+                <input type="radio" name="q1" value="2"> Dinner and a Movie</p>
+            <p>
+                <input type="radio" name="q1" value="3"> Outdoor Adventure</p>
+            <p>
+                <input type="radio" name="q1" value="4"> Get Some Culture</p>
+            <p>
+                <input type="radio" name="q1" value="5"> Netflix and Chill</p>
+        </div>
+        <h4>What Food Do You Like?</h4>
+        <div class="input-group" role="group" aria-label="..." id="q2">
+            <p>
+                <input type="radio" name="q2" value="1"> Italian</p>
+            <p>
+                <input type="radio" name="q2" value="2"> Mexican</p>
+            <p>
+                <input type="radio" name="q2" value="3"> Chinese</p>
+            <p>
+                <input type="radio" name="q2" value="4"> Sushi</p>
+            <p>
+                <input type="radio" name="q2" value="5"> Burgers</p>
+            <p>
+                <input type="radio" name="q2" value="6"> Seafood</p>
+        </div>
+</div>
+<script type="text/javascript">
+        $("#submit").on("click", function(){
+            var userData = {
+                first_name: $("#firstname").val(),
+                last_name: $("#lastname").val(),
+                email: $("#email").val(),
+                location: $("location").val(),
+                date: $("dateselector").val(),
+                scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(), ]
+            };
+    });
+        $( function() {
+    $("#dateselector").datepicker();
+  } );
+    </script>
+        <br>
+        <br>
+</body>
+</html>
