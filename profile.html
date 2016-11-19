@@ -6,22 +6,27 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- jquery -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/eggplant/jquery-ui.css">
     <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
 <div class="container">
         <h2>Create Profile</h2>
         <hr>
         <h4>First Name</h4>
-        <input type="text" name="" id="name" class="form-control" required="">
+        <input type="text" name="" id="firstname" class="form-control" required="">
         <h4>Last Name</h4>
-        <input type="text" name="" id="name" class="form-control" required="">
+        <input type="text" name="" id="lastname" class="form-control" required="">
         <h4>Email</h4>
-        <input type="text" name="" id="photo" class="form-control" required="">
+        <input type="text" name="" id="email" class="form-control" required="">
         <h4>Location</h4>
-        <input type="text" name="" id="photo" class="form-control" required="">
+        <input type="text" name="" id="location" class="form-control" required="">
         <hr><br>
-        <h4>Survey Questions</h4>
+        <h4>When are you planning your date night?</h4>
+        <p>Date Night:<input type="text" name="date" id="dateselector"></p>
+       <br>
+        <h4>Date Night Questions</h4>
         <h3><strong>What kinds of activities do you like?</strong></h3>
         <div class="input-group" role="group" aria-label="..." id="q1">
             <p>
@@ -35,123 +40,37 @@
             <p>
                 <input type="radio" name="q1" value="5"> Netflix and Chill</p>
         </div>
-        <h4>2.  ...Is helpful and unselfish with others</h4>
+        <h4>What Food Do You Like?</h4>
         <div class="input-group" role="group" aria-label="..." id="q2">
             <p>
-                <input type="radio" name="q2" value="1"> 1 (Strongly Disagree)</p>
+                <input type="radio" name="q2" value="1"> Italian</p>
             <p>
-                <input type="radio" name="q2" value="2"> 2</p>
+                <input type="radio" name="q2" value="2"> Mexican</p>
             <p>
-                <input type="radio" name="q2" value="3"> 3</p>
+                <input type="radio" name="q2" value="3"> Chinese</p>
             <p>
-                <input type="radio" name="q2" value="4"> 4</p>
+                <input type="radio" name="q2" value="4"> Sushi</p>
             <p>
-                <input type="radio" name="q2" value="5"> 5 (Strongly Agree)</p>
+                <input type="radio" name="q2" value="5"> Burgers</p>
+            <p>
+                <input type="radio" name="q2" value="6"> Seafood</p>
         </div>
-        <h4>3.  ...Is relaxed, handles stress well</h4>
-        <div class="input-group" role="group" aria-label="..." id="q3">
-            <p>
-                <input type="radio" name="q3" value="1"> 1 (Strongly Disagree)</p>
-            <p>
-                <input type="radio" name="q3" value="2"> 2</p>
-            <p>
-                <input type="radio" name="q3" value="3"> 3</p>
-            <p>
-                <input type="radio" name="q3" value="4"> 4</p>
-            <p>
-                <input type="radio" name="q3" value="5"> 5 (Strongly Agree)</p>
-        </div>
-        <h4>4.  ..Is full of energy</h4>
-        <div class="input-group" role="group" aria-label="..." id="q4">
-            <p>
-                <input type="radio" name="q4" value="1"> 1 (Strongly Disagree)</p>
-            <p>
-                <input type="radio" name="q4" value="2"> 2</p>
-            <p>
-                <input type="radio" name="q4" value="3"> 3</p>
-            <p>
-                <input type="radio" name="q4" value="4"> 4</p>
-            <p>
-                <input type="radio" name="q4" value="5"> 5 (Strongly Agree)</p>
-        </div>
-        <h4>5.   ...Has a forgiving nature</h4>
-        <div class="input-group" role="group" aria-label="..." id="q5">
-            <p>
-                <input type="radio" name="q5" value="1"> 1 (Strongly Disagree)</p>
-            <p>
-                <input type="radio" name="q5" value="2"> 2</p>
-            <p>
-                <input type="radio" name="q5" value="3"> 3</p>
-            <p>
-                <input type="radio" name="q5" value="4"> 4</p>
-            <p>
-                <input type="radio" name="q5" value="5"> 5 (Strongly Agree)</p>
-        </div>
-        <h4>6.  ...Worries a lot</h4>
-        <div class="input-group" role="group" aria-label="..." id="q6">
-            <p>
-                <input type="radio" name="q6" value="1"> 1 (Strongly Disagree)</p>
-            <p>
-                <input type="radio" name="q6" value="2"> 2</p>
-            <p>
-                <input type="radio" name="q6" value="3"> 3</p>
-            <p>
-                <input type="radio" name="q6" value="4"> 4</p>
-            <p>
-                <input type="radio" name="q6" value="5"> 5 (Strongly Agree)</p>
-        </div>
-        <h4>7.  ...Is generally trusting</h4>
-        <div class="input-group" role="group" aria-label="..." id="q7">
-            <p>
-                <input type="radio" name="q7" value="1"> 1 (Strongly Disagree)</p>
-            <p>
-                <input type="radio" name="q7" value="2"> 2</p>
-            <p>
-                <input type="radio" name="q7" value="3"> 3</p>
-            <p>
-                <input type="radio" name="q7" value="4"> 4</p>
-            <p>
-                <input type="radio" name="q7" value="5"> 5 (Strongly Agree)</p>
-        </div>
-        <h4>8.  ...Tends to be lazy</h4>
-        <div class="input-group" role="group" aria-label="..." id="q8">
-            <p>
-                <input type="radio" name="q8" value="1"> 1 (Strongly Disagree)</p>
-            <p>
-                <input type="radio" name="q8" value="2"> 2</p>
-            <p>
-                <input type="radio" name="q8" value="3"> 3</p>
-            <p>
-                <input type="radio" name="q8" value="4"> 4</p>
-            <p>
-                <input type="radio" name="q8" value="5"> 5 (Strongly Agree)</p>
-        </div>
-        <h4>9.  ...Has an assertive personality</h4>
-        <div class="input-group" role="group" aria-label="..." id="q9">
-            <p>
-                <input type="radio" name="q9" value="1"> 1 (Strongly Disagree)</p>
-            <p>
-                <input type="radio" name="q9" value="2"> 2</p>
-            <p>
-                <input type="radio" name="q9" value="3"> 3</p>
-            <p>
-                <input type="radio" name="q9" value="4"> 4</p>
-            <p>
-                <input type="radio" name="q9" value="5"> 5 (Strongly Agree)</p>
-        </div>
-        <h4>10.  ...Is considerate and kind to almost everyone</h4>
-        <div class="input-group" role="group" aria-label="..." id="q10">
-            <p>
-                <input type="radio" name="q10" value="1"> 1 (Strongly Disagree)</p>
-            <p>
-                <input type="radio" name="q10" value="2"> 2</p>
-            <p>
-                <input type="radio" name="q10" value="3"> 3</p>
-            <p>
-                <input type="radio" name="q10" value="4"> 4</p>
-            <p>
-                <input type="radio" name="q10" value="5"> 5 (Strongly Agree)</p>
-        </div>
+</div>
+<script type="text/javascript">
+        $("#submit").on("click", function(){
+            var userData = {
+                first_name: $("#firstname").val(),
+                last_name: $("#lastname").val(),
+                email: $("#email").val(),
+                location: $("location").val(),
+                date: $("dateselector").val(),
+                scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(), ]
+            };
+    });
+        $( function() {
+    $("#dateselector").datepicker();
+  } );
+    </script>
         <br>
         <br>
 </body>
