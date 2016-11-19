@@ -1,0 +1,33 @@
+{
+  "name": "datenight",
+  "version": "1.0.0",
+  "description": "date night app",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.6",
+    "mysql": "^2.12.0",
+    "passport": "^0.3.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmejares/DateNight.git"
+  },
+  "keywords": [
+    "date",
+    "night"
+  ],
+  "author": "Allan, Rick, Miguel, Damian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmejares/DateNight/issues"
+  },
+  "homepage": "https://github.com/mmejares/DateNight#readme"
+}
