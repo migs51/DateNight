@@ -1,0 +1,24 @@
+
+body {
+
+font-family: "Avenir", 'helvetica neue', 'helvetica', 'arial' !important;
+    background: #2a3b4b;
+    background-size: 108px 108px;
+}	
+
+.jumbotron {
+    background: transparent;
+    padding: 0;
+    color: white;
+}
+
+form {
+
+	    padding-top: 30px;
+    padding-bottom: 100px;
+
+}
+
+h2{
+	color: #bde0f4;
+}
