@@ -1,11 +1,7 @@
 {
   "name": "datenight",
   "version": "1.0.0",
-<<<<<<< HEAD
   "description": "Date Night App to help user find activities for a night out",
-  "main": "index.js",
-=======
-  "description": "date night app",
   "main": "index.js",
   "dependencies": {
     "body-parser": "^1.15.2",
@@ -17,7 +13,6 @@
     "path": "^0.12.7"
   },
   "devDependencies": {},
->>>>>>> d8eee2ca0e719722c7bf98f1699d0d7bce6f7e56
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -29,27 +24,10 @@
     "date",
     "night"
   ],
-<<<<<<< HEAD
   "author": "Miguel, Rick, Allan, Damian",
-=======
-  "author": "Allan, Rick, Miguel, Damian",
->>>>>>> d8eee2ca0e719722c7bf98f1699d0d7bce6f7e56
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mmejares/DateNight/issues"
   },
-<<<<<<< HEAD
-  "homepage": "https://github.com/mmejares/DateNight#readme",
-  "dependencies": {
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0",
-    "express-handlebars": "^3.0.0",
-    "handlebars": "^4.0.6",
-    "mysql": "^2.12.0",
-    "passport": "^0.3.2",
-    "path": "^0.12.7"
-  }
-=======
-  "homepage": "https://github.com/mmejares/DateNight#readme"
->>>>>>> d8eee2ca0e719722c7bf98f1699d0d7bce6f7e56
+  "homepage": "https://github.com/mmejares/DateNight"
 }
