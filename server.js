@@ -7,6 +7,14 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
 
+//passport start--------------------------------
+
+var session  = require('express-session');
+var cookieParser = require('cookie-parser');
+var morgan = require('morgan');
+
+//passport end--------------------------------
+
 
 // ==============================================================================
 // EXPRESS CONFIGURATION
@@ -16,6 +24,20 @@ var path = require('path');
 var app = express(); // Tells node that we are creating an "express" server
 var PORT = process.env.PORT || 8080; // Sets an initial port. We'll use this later in our listener
 
+//passport start--------------------------------
+
+var passport = require('passport');
+var flash    = require('connect-flash');
+
+
+
+require('./controller/passport')(passport); // pass passport for configuration
+
+//passport end--------------------------------
+
+
+
+
 // BodyParser makes it easy for our server to interpret data sent to it.
 // The code below is pretty standard.
 app.use(bodyParser.json());
@@ -23,8 +45,33 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.text());
 app.use(bodyParser.json({type:'application/vnd.api+json'}));
 
-//app.use(express.static('/view/assets'));
-app.use(express.static(__dirname + '/view/assets'));
+
+//passport start--------------------------------
+
+// set up our express application
+app.use(morgan('dev')); // log every request to the console
+app.use(cookieParser()); // read cookies (needed for auth)
+app.use(bodyParser.urlencoded({
+	extended: true
+}));
+app.use(bodyParser.json());
+
+app.set('view engine', 'ejs'); // set up ejs for templating
+
+// required for passport
+app.use(session({
+	secret: 'vidyapathaisalwaysrunning',
+	resave: true,
+	saveUninitialized: true
+ } )); // session secret
+app.use(passport.initialize());
+app.use(passport.session()); // persistent login sessions
+app.use(flash()); // use connect-flash for flash messages stored in session
+
+//passport part end------------------------------------------
+
+// read css
+app.use(express.static(__dirname + '/views/assets'));
 
 // ================================================================================
 // ROUTER
@@ -33,7 +80,7 @@ app.use(express.static(__dirname + '/view/assets'));
 // ================================================================================
 
 
-require('./view/html-routes.js')(app);
+require('./views/html-routes.js')(app, passport);
 
 // ==============================================================================
 // LISTENER
