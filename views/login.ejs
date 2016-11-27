@@ -5,14 +5,46 @@
 	<title>Node Authentication</title>
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
-	<style>
-		body 		{ padding-top:80px; }
-	</style>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+	
 </head>
 <body>
+    
+    <nav class="navbar navbar-default navbar-inverse navbar-static-top main" role="navigation">
+            
+                <div class="container">
+
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav choose_page">                    
+                            
+                                <li class="about"><a href="/about">About</a></li>
+                            
+                            
+                                <li class="jobs"><a href="/jobs">Jobs</a></li>
+                            
+                            
+                                <li class="contact"><a href="/contact">Contact</a></li>
+                            
+                                <li class="help"><a href="/help">Help</a></li>
+                            
+                                <li class="blog"><a href="/blog">Blog</a></li> 
+                            
+                            
+                                <li class="signin"><a href="/singIn">Sign in</a></li>
+                            
+                        </ul>
+                        
+                    </div><!-- /.navbar-collapse -->
+                </div>
+    </nav>
+
+
     <div class="container">
         <div class="col-sm-6 col-sm-offset-3">
-            <h1><span class="fa fa-sign-in"></span> Login</h1>
+            <h1><span class="fa fa-sign-in"></span> Date Night Login</h1>
 
             <!-- show any messages that come back with authentication -->
             <% if (message.length > 0) { %>
@@ -34,13 +66,13 @@
                     <input type="checkbox" class="form-control" name="remember" value="yes">
                 </div>
 
-                <button type="submit" class="btn btn-warning btn-lg">Login</button>
+                <button type="submit" class="btn btn-success btn-lg">Login</button>
             </form>
 
             <hr>
 
             <p>Need an account? <a href="/signup">Signup</a></p>
-            <p>Or go <a href="/">home</a>.</p>
+            <p>Or go <a href="/">home</a></p>
         </div>
     </div>
 </body>

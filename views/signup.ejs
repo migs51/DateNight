@@ -5,43 +5,78 @@
 	<title>Node Authentication</title>
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
-	<style>
-		body 		{ padding-top:80px; }
-	</style>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+	
 </head>
+
 <body>
-<div class="container">
 
-<div class="col-sm-6 col-sm-offset-3">
+	<nav class="navbar navbar-default navbar-inverse navbar-static-top main" role="navigation">
+			
+				<div class="container">
 
-	<h1><span class="fa fa-sign-in"></span> Signup</h1>
+				  <!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+					    <ul class="nav navbar-nav choose_page">				       
+					        
+					            <li class="about"><a href="/about">About</a></li>
+					        
+					        
+					            <li class="jobs"><a href="/jobs">Jobs</a></li>
+					        
+					        
+					            <li class="contact"><a href="/contact">Contact</a></li>
+					        
+					            <li class="help"><a href="/help">Help</a></li>
+					        
+					            <li class="blog"><a href="/blog">Blog</a></li> 
+					        
+					        
+					            <li class="signin"><a href="/singIn">Sign in</a></li>
+					        
+					    </ul>
+					    
+					</div><!-- /.navbar-collapse -->
+				</div>
+	</nav>
 
-	<!-- show any messages that come back with authentication -->
-	<% if (message.length > 0) { %>
-		<div class="alert alert-danger"><%= message %></div>
-	<% } %>
 
-	<!-- LOGIN FORM -->
-	<form action="/signup" method="post">
-		<div class="form-group">
-			<label>Username</label>
-			<input type="text" class="form-control" name="username">
+
+	<div class="container">
+
+		<div class="col-sm-6 col-sm-offset-3">
+
+			<h1><span class="fa fa-sign-in"></span> Date Night Signup</h1>
+
+			<!-- show any messages that come back with authentication -->
+			<% if (message.length > 0) { %>
+				<div class="alert alert-danger"><%= message %></div>
+			<% } %>
+
+			<!-- LOGIN FORM -->
+			<form action="/signup" method="post">
+				<div class="form-group">
+					<label>Username</label>
+					<input type="text" class="form-control" name="username">
+				</div>
+				<div class="form-group">
+					<label>Password</label>
+					<input type="password" class="form-control" name="password">
+				</div>
+
+				<button type="submit" class="btn btn-success btn-lg">Signup</button>
+			</form>
+
+			<hr>
+
+			<p>Already have an account? <a href="/login">Login</a></p>
+			<p>Or go <a href="/">home</a></p>
+
 		</div>
-		<div class="form-group">
-			<label>Password</label>
-			<input type="password" class="form-control" name="password">
-		</div>
 
-		<button type="submit" class="btn btn-warning btn-lg">Signup</button>
-	</form>
-
-	<hr>
-
-	<p>Already have an account? <a href="/login">Login</a></p>
-	<p>Or go <a href="/">home</a>.</p>
-
-</div>
-
-</div>
+	</div>
 </body>
 </html>
