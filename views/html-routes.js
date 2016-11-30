@@ -98,6 +98,13 @@ module.exports = function(app, passport) {
 		req.logout();
 		res.redirect('/');
 	});
+
+	app.get('/profile', function(req, res) {
+		//res.render('index.html'); // load the index.ejs file
+		res.sendFile(path.join(__dirname + '/./profile.html'));
+	});
+
+
 };
 
 // route middleware to make sure

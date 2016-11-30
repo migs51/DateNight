@@ -3,7 +3,7 @@
  */
 
 var mysql = require('mysql');
-var dbconfig = require('../config/database');
+var dbconfig = require('../controller/database');
 
 var connection = mysql.createConnection(dbconfig.connection);
 
