@@ -49,7 +49,7 @@ module.exports = function(app, passport) {
 
 	// process the login form
 	app.post('/login', passport.authenticate('local-login', {
-            successRedirect : '/main', // redirect to the secure profile section
+            successRedirect : '/event', // redirect to the secure profile section
             failureRedirect : '/login', // redirect back to the signup page if there is an error
             failureFlash : true // allow flash messages
 		}),
@@ -103,6 +103,12 @@ module.exports = function(app, passport) {
 		//res.render('index.html'); // load the index.ejs file
 		res.sendFile(path.join(__dirname + '/./profile.html'));
 	});
+
+	app.get('/event', function(req, res) {
+		//res.render('index.html'); // load the index.ejs file
+		res.sendFile(path.join(__dirname + '/./event.html'));
+	});
+
 
 
 };
