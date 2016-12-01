@@ -1,13 +1,26 @@
-CREATE DATABASE dateNight;
-USE dateNight;
-CREATE TABLE `users` (
-  `userID` INT NOT NULL AUTO_INCREMENT,
-  `FirstName` VARCHAR(50) NULL,
-  `LastName` VARCHAR(50) NULL,
-  `Gender` VARCHAR(50) NULL,
-  `Email` VARCHAR(50) NULL,
-  `Password` VARCHAR(12) NULL,
-  PRIMARY KEY (`UserID`)
+CREATE DATABASE my_schema;
+
+USE my_schema;
+
+CREATE TABLE profile (
+	id INT(10) NOT NULL,
+    first_name VARCHAR(255),
+    last_name VARCHAR(255),
+    email VARCHAR(255),
+    location VARCHAR(255),
+    concerts VARCHAR(255),
+    outdoor VARCHAR(255),
+    fine_arts VARCHAR(255),
+    sports VARCHAR(255),
+    festivals VARCHAR(255),
+    comedy VARCHAR(255),
+    italian VARCHAR(255),
+    mexican VARCHAR(255),
+    asian VARCHAR(255),
+    seafood VARCHAR(255),
+    american VARCHAR(255),
+    primary key (id)
+);
 );
 
 
