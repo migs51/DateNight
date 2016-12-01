@@ -8,6 +8,11 @@ var bodyParser = require('body-parser');
 var path = require('path');
 var eventful = require('eventful-node');
 
+// add the UserInput model and sync it.
+// Syncing the model will create a matching table in our MySQL db. 
+var UserInput = require("./models")["UserInput"]
+UserInput.sync(); // creates a UserInput table
+
 //passport start--------------------------------
 
 var session  = require('express-session');
@@ -15,6 +20,7 @@ var cookieParser = require('cookie-parser');
 var morgan = require('morgan');
 
 //passport end--------------------------------
+
 
 
 // ==============================================================================
@@ -29,8 +35,6 @@ var PORT = process.env.PORT || 8080; // Sets an initial port. We'll use this lat
 
 var passport = require('passport');
 var flash    = require('connect-flash');
-
-
 
 require('./controller/passport')(passport); // pass passport for configuration
 
@@ -82,6 +86,7 @@ app.use(express.static(__dirname + '/views/assets'));
 
 
 require('./views/html-routes.js')(app, passport);
+require('./views/api-routes.js')(app);
 
 // ==============================================================================
 // LISTENER

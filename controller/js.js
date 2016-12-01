@@ -14,14 +14,14 @@ showEvents('music','austin');
 function showEvents (e,l) {
 
 var oArgs = {
-app_key: "rqJNStmNMPNtvngf",
-q: e,
-where: l,
-page_size: 10,
-sort_order: "popularity",
- date:"This week",
+    app_key: "rqJNStmNMPNtvngf",
+    q: e,
+    where: l,
+    page_size: 10,
+    sort_order: "popularity",
+    date: "This week"
 };
- var content = '';
+var content = '';
 EVDB.API.call("/events/search", oArgs, function(oData) {
             console.log(oData)
             //Get the title for each item

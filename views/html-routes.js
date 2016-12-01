@@ -109,6 +109,11 @@ module.exports = function(app, passport) {
 		res.sendFile(path.join(__dirname + '/./event.html'));
 	});
 
+	app.get('/input', function(req, res) {
+		//res.render('index.html'); // load the index.ejs file
+		res.sendFile(path.join(__dirname + '/./input.html'));
+	});
+
 
 
 };
