@@ -1,3 +1,8 @@
+layout-frontpage {
+    max-width: 1020px;
+}
+
+
 
 body {
 
@@ -10,17 +15,24 @@ font-family: "Avenir", 'helvetica neue', 'helvetica', 'arial' !important;
     background: transparent;
     padding: 0;
     color: white;
+
 }
 
 form {
 
 	    padding-top: 30px;
-    padding-bottom: 90px;
+    padding-bottom: 120px;
+    font-size: 18px;
 
 }
 
-h2{
+h1 {
+    color: white;
+}
+
+h2 {
 	color: #bde0f4;
+    font-size: 25px;
 }
 
 strong {
@@ -30,7 +42,7 @@ strong {
     font-weight: normal;
 }
 
-h1{
+.title_head {
     color: white;
     font-size: 43px;
 }
@@ -49,11 +61,15 @@ h4{
 
 .btn{
      margin-top: 30;
+     font-size: 20;
 }
 
+
+
 .brand{
-    left: 575px;
+
     top: 6px;
+    float: right;
 }
 
 #dateselector{
@@ -68,4 +84,21 @@ h4{
 
 h3{
     color: white;
+}
+
+.signin {
+    border: 1px solid white;
+    border-radius: 35px;
+    border-color: rgba(255, 155, 255, 0.25);
+}
+
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px:  
+    background: #2a3b4b;
+    font-size: 12px;
+}
+
+#indexBtn {
+    font-size: 18px;
 }
