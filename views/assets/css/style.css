@@ -55,3 +55,17 @@ h4{
     left: 575px;
     top: 6px;
 }
+
+#dateselector{
+    position: relative;
+    left: 8px;
+}
+
+#submit{
+    position: relative;
+    left: 28px;
+}
+
+h3{
+    color: white;
+}
