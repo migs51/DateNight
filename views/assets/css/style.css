@@ -15,7 +15,7 @@ font-family: "Avenir", 'helvetica neue', 'helvetica', 'arial' !important;
 form {
 
 	    padding-top: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 90px;
 
 }
 
@@ -49,4 +49,9 @@ h4{
 
 .btn{
      margin-top: 30;
+}
+
+.brand{
+    left: 575px;
+    top: 6px;
 }
