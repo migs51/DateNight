@@ -17,19 +17,23 @@
 
 	<body>
 		<div class="container">
-			<h1>Search for local events in your area!</h1>
-			<form class = "findevents">
+			<h1 id="h1_input">Search for local events in your area!</h1>
+			<form id = "findevents">
 				<h4>City:</h4>
 				<input type="text" name="zip" id ="location">
 				<h4>Event type:</h4>
 				<input type="text" name="event" id ="event">
 				<br>
-				<input type="submit" class = "btn btn-success" value="Submit" name = "submit" id="addBtn">
-			</form> 
+
+
+				<a class="btn btn-success" role="button" id="addBtn">Submit</a>
+				<!--a class="btn btn-success" href="/event" role="button" id="addBtn">Submit</a-->
+
+			</form>
 
 		</div>
 	</body>
 
-	<script src="./add.js" type="text/javascript"></script>
+	<script src="add.js" type="text/javascript"></script>
 
 </html>
