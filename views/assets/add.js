@@ -31,9 +31,15 @@ $('#addBtn').on("click", function(){
 	$('#event').val("");
 
 	$('#h1_input').empty();
-	var profileUpdated = "<h1>"+"Your profile is created"+"<h1>";
+	var profileUpdated = "<h1>"+"Your profile is updated"+"<h1>";
 	$('#h1_input').append(profileUpdated);
 	$('#findevents').hide();
+
+	var infoButton = $('<button>');
+    infoButton.addClass('btn btn-success btn-lg');
+    infoButton.attr('role', 'button' );
+    infoButton.html('Get the Activities');
+    $('#infoButtonDiv').append(infoButton);
 
 
 
