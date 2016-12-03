@@ -1,9 +1,9 @@
   {
   "development": {
-    "username": "root",
-    "password": "",
+    "username": "za6tl503zt9023zc",
+    "password": "c2gocdczjsgguet5",
     "database": "my_schema",
-    "host": "JAWSDB_URL",
+    "host": "tkck4yllxdrw0bhi.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "test": {
@@ -14,10 +14,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
+    "username": "za6tl503zt9023zc",
+    "password": "c2gocdczjsgguet5",
     "database": "database_production",
-    "host": "JAWSDB_URL",
+    "host": "tkck4yllxdrw0bhi.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "use_env_variable": "JAWSDB_URL",
     "dialect": "mysql"
   }
