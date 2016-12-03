@@ -29,7 +29,7 @@ var morgan = require('morgan');
 // ==============================================================================
 
 var app = express(); // Tells node that we are creating an "express" server
-var PORT = process.env.PORT || 8080; // Sets an initial port. We'll use this later in our listener
+var PORT = process.env.PORT || 3306; // Sets an initial port. We'll use this later in our listener
 
 //passport start--------------------------------
 
