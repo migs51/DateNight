@@ -14,8 +14,8 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "za6tl503zt9023zc",
-    "password": "c2gocdczjsgguet5",
+    "username": "root>",
+    "password": null,
     "database": "my_schema",
     "host": "tkck4yllxdrw0bhi.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "use_env_variable": "mysql://za6tl503zt9023zc:c2gocdczjsgguet5@tkck4yllxdrw0bhi.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/zruj5d3hlajnjirb",
