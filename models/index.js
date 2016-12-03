@@ -10,7 +10,7 @@ var db        = {};
 
 //if (config.use_env_variable !== 'development') {
 if (true) {
-  var sequelize = new Sequelize(process.env[config.use_env_variable]);
+  var sequelize = new Sequelize('mysql://za6tl503zt9023zc:c2gocdczjsgguet5@tkck4yllxdrw0bhi.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/zruj5d3hlajnjirb');
 } else {
   var sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
