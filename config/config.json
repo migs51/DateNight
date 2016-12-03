@@ -1,7 +1,7 @@
   {
   "development": {
-    "username": "za6tl503zt9023zc",
-    "password": "c2gocdczjsgguet5",
+    "username": "",
+    "password": null,
     "database": "my_schema",
     "host": "tkck4yllxdrw0bhi.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
